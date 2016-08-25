@@ -1,31 +1,39 @@
-PATH
-  remote: .
+GIT
+  remote: git://github.com/big-org/toychain-data_structures.git
+  revision: f8f0ab4f2d92bfd7b59c23772a92e349917803d4
+  branch: node_cleanup
   specs:
-    toychain-node (0.0.1)
+    toychain-data_structures (0.0.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    ffi (1.9.14)
-    listen (3.1.5)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
-      ruby_dep (~> 1.2)
-    rake (11.2.2)
-    rb-fsevent (0.9.7)
-    rb-inotify (0.9.7)
-      ffi (>= 0.5.0)
-    rerun (0.11.0)
-      listen (~> 3.0)
-    ruby_dep (1.4.0)
+    ansi (1.5.0)
+    builder (3.2.2)
+    coderay (1.1.1)
+    method_source (0.8.2)
+    minitest (5.9.0)
+    minitest-reporters (1.1.11)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rake (10.5.0)
+    ruby-progressbar (1.8.1)
+    slop (3.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  minitest
+  minitest-reporters
+  pry
   rake
-  rerun
   toychain-data_structures!
 
 BUNDLED WITH
