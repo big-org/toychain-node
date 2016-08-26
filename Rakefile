@@ -1,7 +1,7 @@
 require_relative './lib/toychain-node/version.rb'
 test_files = Dir.glob('./test/*/*_test.rb') + Dir.glob('./test/*_test.rb')
 
-gem_name = 'toychain-data_structures'
+gem_name = 'toychain-node'
 gem_version = ToyChain::Node::VERSION
 
 task :default => :test
